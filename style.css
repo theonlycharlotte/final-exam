@@ -1,0 +1,523 @@
+@import url("https://use.typekit.net/nko7smo.css");
+
+/*
+Termina Thin
+font-family: termina, sans-serif;
+font-weight: 100;
+font-style: normal;
+
+
+Termina Extra Light
+font-family: termina, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+
+Termina Light
+font-family: termina, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+
+Termina Regular
+font-family: termina, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+Termina Medium
+font-family: termina, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
+Termina Demi
+font-family: termina, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+
+Termina Bold
+font-family: termina, sans-serif;
+font-weight: 700;
+font-style: normal;
+*/
+
+@import url("https://use.typekit.net/nko7smo.css");
+
+/*
+Meno Banner Light
+font-family: meno-banner, serif;
+font-weight: 300;
+font-style: normal;
+
+
+Meno Banner Regular
+font-family: meno-banner, serif;
+font-weight: 400;
+font-style: normal;
+
+
+Meno Banner Semi Bold
+font-family: meno-banner, serif;
+font-weight: 600;
+font-style: normal;
+
+
+Meno Banner Bold
+font-family: meno-banner, serif;
+font-weight: 700;
+font-style: normal;
+
+
+Meno Banner Extra Bold
+font-family: meno-banner, serif;
+font-weight: 800;
+font-style: normal;
+
+
+Meno Banner Black
+font-family: meno-banner, serif;
+font-weight: 900;
+*/
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: termina, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    background-color: #DBD8D8;
+}
+
+svg path:hover {
+    fill: #847C7C;
+}
+
+
+/*---TEXT STYLES---*/
+
+h1 {
+    margin: 0;
+}
+
+.small-header {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.big-header {
+    font-family: meno-banner, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5rem;
+    letter-spacing: 4px;
+    margin-top: 0.7rem;
+}
+
+.bold-text {
+    font-weight: 500;
+    color: #605959;
+}
+
+.semi-bold-text {
+    font-weight: 400;
+    color: #9C3535;
+}
+
+/*---MEDIA QUERIES TEXT STYLING BEGIN---*/
+
+
+
+@media (max-width: 768px) {
+
+    .small-header {
+        font-size: 0.7rem;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+
+    .big-header {
+        font-size: 4rem;
+        letter-spacing: 3px;
+        margin-top: 0.6rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+
+/*---TEXT STYLES END---*/
+
+
+/*---BUTTON FOR ONLINE ORDER---*/
+.order-online-button {
+    position: fixed;
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #9C3535;
+    color: #eeeeee;
+    font-weight: 400;
+    top: 80vh;
+    right: 5vw;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 10px;
+    -webkit-box-shadow: 2px 10px 17px -13px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 2px 10px 17px -13px rgba(0, 0, 0, 0.17);
+    box-shadow: 2px 10px 17px -13px rgba(0, 0, 0, 0.50);
+}
+
+@media (max-width: 768px) {
+
+    .order-online-button {
+    top: 90vh;
+    width: 95px;
+    height: 90px;
+
+    }
+
+}
+
+.order-button-icon {
+    height: 32px;
+}
+
+.order-online-button figure {
+    margin: 0 auto;
+
+}
+
+.scale-up-center:hover {
+    -webkit-animation: scale-up-center 0.5s both;
+    animation: scale-up-center 0.5s both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+/*---BUTTON FOR ONLINE ORDER END---*/
+
+/*---HERO IMAGE KEN BURNS ANIMATION BEGIN---*/
+
+.hero-image-container {
+    position: relative;
+    height: 43vh;
+    width: 100vw;
+    background-color: #DBD8D8;
+    overflow: hidden;
+}
+
+.hero-image-container img {
+    width: 100vw;
+}
+
+@media only screen and (min-width: 600px) and (max-width:950px) {
+
+    .hero-image-container img {
+        width: 130vw;
+    }
+
+    .hero-image-container {
+
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    .hero-image-container img {
+        width: 200vw;
+    }
+
+    .hero-image-container {
+        margin-top: 7vh;
+        height: 30vh;
+    }
+}
+
+
+.kenburns-top-left {
+    -webkit-animation: kenburns-top-left 14s linear infinite alternate both;
+    animation: kenburns-top-left 14s linear infinite alternate both;
+}
+
+@-webkit-keyframes kenburns-top-left {
+    0% {
+        -webkit-transform: scale(1) translate(0, 0);
+        transform: scale(1) translate(0, 0);
+        -webkit-transform-origin: 16% 16%;
+        transform-origin: 16% 16%;
+    }
+
+    100% {
+        -webkit-transform: scale(1.15) translate(-20px, -15px);
+        transform: scale(1.15) translate(-20px, -15px);
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+    }
+}
+
+@keyframes kenburns-top-left {
+    0% {
+        -webkit-transform: scale(1) translate(0, 0);
+        transform: scale(1) translate(0, 0);
+        -webkit-transform-origin: 16% 16%;
+        transform-origin: 16% 16%;
+    }
+
+    100% {
+        -webkit-transform: scale(1.15) translate(-20px, -15px);
+        transform: scale(1.15) translate(-20px, -15px);
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+    }
+}
+
+.menu-text-box {
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .menu-text-box {
+        top: 50%;
+    }
+}
+
+/*---HERO IMAGE KEN BURNS ANIMATION END---*/
+
+/*---GRID STYLES BEGIN---*/
+
+.g1 {
+    grid-area: g1;
+    position: fixed;
+    /*    background-color: aqua;*/
+}
+
+.g2 {
+    grid-area: g2;
+    /*    background-color: hotpink;*/
+
+
+}
+
+
+.menu-grid {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "g1 g2 g2 g2";
+}
+
+@media (max-width: 768px) {
+    .menu-grid {
+        position: relative;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "g1"
+            "g2";
+    }
+
+    .g1 {
+        position: relative;
+        top: 0;
+        background-color: aqua;
+        padding: 12px;
+        width: 100vw;
+
+
+    }
+
+}
+
+/*---NESTED MENU GRID BEGIN---*/
+
+.g2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a1 a1 a1"
+        "a2 a3 a4"
+        "a5 a5 a5";
+}
+
+.a1 {
+    grid-area: a1;
+    padding-top: 60px;
+    padding-bottom: 65px;
+    text-align: center;
+    color: #605959;
+}
+
+.a1 .big-header {
+    font-size: 3.2rem;
+}
+
+.a2 {
+    grid-area: a2;
+    /*    background-color: yellow;*/
+    text-align: center;
+    padding: 5px;
+}
+
+.a3 {
+    grid-area: a3;
+    /*    background-color: navajowhite;*/
+    text-align: center;
+    padding: 5px;
+}
+
+.a4 {
+    grid-area: a4;
+    /*    background-color: indigo;*/
+    text-align: center;
+    padding: 5px;
+}
+
+.a5 {
+    grid-area: a5;
+    /*    background-color: fuchsia;*/
+    height: 200vh;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .g2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5";
+}
+}
+
+
+
+/*---NESTED MENU GRID BEGIN---*/
+
+
+/*---GRID STYLES END---*/
+
+
+/*SIDE NAVIGATION BEGIN*/
+
+
+.menu-items-list li {
+    list-style: none;
+    padding-bottom: 9px;
+
+}
+
+.menu-items-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+
+    .menu-items-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .menu-items-list li {
+        font-size: 9px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        /*        border-style: solid;*/
+        /*        border-width: 0.5px;*/
+        border-radius: 10px;
+        margin-top: 4px;
+        margin-left: 3px;
+        margin-right: 3px;
+        background-color: #EEEEEE;
+
+
+    }
+
+
+}
+
+/*---FOOD MENU STYLING---*/
+
+.menu-icons {
+    height: 50px;
+}
+
+.a2 p {
+    line-height: 2;
+}
+
+.a3 p {
+    line-height: 2;
+}
+
+.a4 p {
+    line-height: 2;
+}
+
+.a5 div {
+    text-align: center;
+    background-color: #EEEEEE;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+
+.display-none {
+    display: none;
+}
+
+    }
