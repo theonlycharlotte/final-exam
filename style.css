@@ -164,9 +164,11 @@ h1 {
 
 /*---HERO SECTION BEGIN---*/
 
-.hero {
-    padding-top: 10vh;
+.hero-section {
+    height: 100vh;
+    padding-top: 9vh;
 }
+
 
 .hero-text-wrap {
     text-align: center;
@@ -174,7 +176,7 @@ h1 {
 
 .hero-text-wrap .big-header {
     font-size: 50px;
-    color:#9C3535;
+    color: #9C3535;
 }
 
 .hero-text-wrap .small-header {
@@ -191,148 +193,270 @@ h1 {
     width: 16vw;
 }
 
-/*BURGER LAYER 1 ANIMATION BEGIN*/
+/*---HERO SECTION TABLET MEDIA QUERY BEGIN---*/
+
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+
+
+    .hero-section {
+        padding-top: 14vh;
+    }
+
+
+    .burger-svgs-wrapper {
+        width: 35vw;
+
+    }
+
+    .burger-svgs {
+        width: 35vw;
+    }
+
+
+}
+
+/*---HERO SECTION MOBILE MEDIA QUERY BEGIN---*/
+
+@media (max-width: 640px) {
+
+    .hero {
+        padding-top: 12vh;
+    }
+
+
+    .burger-svgs-wrapper {
+        width: 50vw;
+
+    }
+
+    .burger-svgs {
+        width: 50vw;
+    }
+
+    .hero-text-wrap .big-header {
+        font-size: 30px;
+
+    }
+
+    .hero-text-wrap .small-header {
+        color: #9C3535;
+        font-size: 11px;
+    }
+
+
+}
+
+/*---COIN BURGER SECTION BEGIN---> */
+
+#coin-burger {
+    background-color: #312F2F;
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(2, auto);
+    color: white;
+}
+
+
+.coin-burger-text-wrap  {
+  padding: 30px;
+
+}
+
+#coin-burger div a {
+    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.5px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+
+@media (max-width: 768px) {
+    #coin-burger {
+    background-color: #9C3535;
+    display: grid;
+    grid-template-columns: repeat(1, 100vw);
+    grid-template-rows: repeat(1, auto);
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*BURGER LAYER 1 ANIMATION BEGIN---> */
 
 .fade-in {
-	-webkit-animation: fade-in 1.5s ease-in 0.4s both;
-	        animation: fade-in 1.5s ease-in 0.4s both;
+    -webkit-animation: fade-in 1.5s ease-in 0.4s both;
+    animation: fade-in 1.5s ease-in 0.4s both;
 }
 
 @-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /*BURGER LAYER 2 ANIMATION BEGIN*/
 
 .fade-in-2 {
-	-webkit-animation: fade-in 1.5s ease-in 1s both;
-	        animation: fade-in 1.5s ease-in 1s both;
+    -webkit-animation: fade-in 1.5s ease-in 1s both;
+    animation: fade-in 1.5s ease-in 1s both;
 }
 
 @-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /*BURGER LAYER 3 ANIMATION BEGIN*/
 
 .fade-in-3 {
-	-webkit-animation: fade-in 1.5s ease-in 1.6s both;
-	        animation: fade-in 1.5s ease-in 1.6s both;
+    -webkit-animation: fade-in 1.5s ease-in 1.6s both;
+    animation: fade-in 1.5s ease-in 1.6s both;
 }
 
 @-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /*BURGER LAYER 4 ANIMATION BEGIN*/
 
 .fade-in-4 {
-	-webkit-animation: fade-in 1.5s ease-in 2.2s both;
-	        animation: fade-in 1.5s ease-in 2.2s both;
+    -webkit-animation: fade-in 1.5s ease-in 2.2s both;
+    animation: fade-in 1.5s ease-in 2.2s both;
 }
 
 @-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /*BURGER LAYER 5 ANIMATION BEGIN*/
 
 .fade-in-5 {
-	-webkit-animation: fade-in 1.5s ease-in 2.8s both;
-	        animation: fade-in 1.5s ease-in 2.8s both;
+    -webkit-animation: fade-in 1.5s ease-in 2.8s both;
+    animation: fade-in 1.5s ease-in 2.8s both;
 }
 
 @-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /*BURGER LAYER 6 ANIMATION BEGIN*/
 
 .fade-in-6 {
-	-webkit-animation: fade-in 1.5s ease-in 3.4s both;
-	        animation: fade-in 1.5s ease-in 3.4s both;
+    -webkit-animation: fade-in 1.5s ease-in 3.4s both;
+    animation: fade-in 1.5s ease-in 3.4s both;
 }
 
 @-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -365,9 +489,9 @@ h1 {
 @media (max-width: 768px) {
 
     .order-online-button {
-    top: 90vh;
-    width: 95px;
-    height: 90px;
+        top: 90vh;
+        width: 95px;
+        height: 90px;
 
     }
 
@@ -606,15 +730,15 @@ h1 {
 
 @media (max-width: 768px) {
     .nested-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "a1"
-        "a2"
-        "a3"
-        "a4"
-        "a5";
-}
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "a1"
+            "a2"
+            "a3"
+            "a4"
+            "a5";
+    }
 }
 
 
@@ -675,7 +799,7 @@ h1 {
 /*---FOOD MENU STYLING---*/
 
 .menu-icons {
-    height: 50px;
+    height: 80px;
 }
 
 .a2 p {
@@ -698,8 +822,8 @@ h1 {
 
 @media (min-width: 768px) {
 
-.display-none {
-    display: none;
-}
-
+    .display-none {
+        display: none;
     }
+
+}
