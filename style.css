@@ -258,8 +258,19 @@ h1 {
 
 
 .coin-burger-text-wrap  {
-  padding: 30px;
+  padding: 50px 100px 50px 100px;
 
+
+
+}
+
+.coin-burger-text-wrap h1 {
+    color: #605959;
+}
+
+#coin-burger div p {
+    margin-bottom: 50px;
+    line-height: 1.8;
 }
 
 #coin-burger div a {
@@ -274,6 +285,8 @@ h1 {
     letter-spacing: 3px;
     margin: 0 auto;
     font-weight: 300;
+    text-decoration: none;
+    color: white;
 }
 
 
