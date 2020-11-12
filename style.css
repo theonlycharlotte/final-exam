@@ -161,6 +161,188 @@ h1 {
 /*---TEXT STYLES END---*/
 
 
+
+/*---HERO SECTION BEGIN---*/
+
+.hero {
+    padding-top: 10vh;
+}
+
+.hero-text-wrap {
+    text-align: center;
+}
+
+.hero-text-wrap .big-header {
+    font-size: 50px;
+    color:#9C3535;
+}
+
+.hero-text-wrap .small-header {
+    color: #9C3535;
+}
+
+.burger-svgs-wrapper {
+    width: 16vw;
+    margin: 0 auto;
+
+}
+
+.burger-svgs {
+    width: 16vw;
+}
+
+/*BURGER LAYER 1 ANIMATION BEGIN*/
+
+.fade-in {
+	-webkit-animation: fade-in 1.5s ease-in 0.4s both;
+	        animation: fade-in 1.5s ease-in 0.4s both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*BURGER LAYER 2 ANIMATION BEGIN*/
+
+.fade-in-2 {
+	-webkit-animation: fade-in 1.5s ease-in 1s both;
+	        animation: fade-in 1.5s ease-in 1s both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*BURGER LAYER 3 ANIMATION BEGIN*/
+
+.fade-in-3 {
+	-webkit-animation: fade-in 1.5s ease-in 1.6s both;
+	        animation: fade-in 1.5s ease-in 1.6s both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*BURGER LAYER 4 ANIMATION BEGIN*/
+
+.fade-in-4 {
+	-webkit-animation: fade-in 1.5s ease-in 2.2s both;
+	        animation: fade-in 1.5s ease-in 2.2s both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*BURGER LAYER 5 ANIMATION BEGIN*/
+
+.fade-in-5 {
+	-webkit-animation: fade-in 1.5s ease-in 2.8s both;
+	        animation: fade-in 1.5s ease-in 2.8s both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*BURGER LAYER 6 ANIMATION BEGIN*/
+
+.fade-in-6 {
+	-webkit-animation: fade-in 1.5s ease-in 3.4s both;
+	        animation: fade-in 1.5s ease-in 3.4s both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/*---HERO SECTION END---*/
+
+
+
+
+
 /*---BUTTON FOR ONLINE ORDER---*/
 .order-online-button {
     position: fixed;
@@ -373,7 +555,7 @@ h1 {
 
 /*---NESTED MENU GRID BEGIN---*/
 
-.g2 {
+.nested-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
@@ -423,7 +605,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .g2 {
+    .nested-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -466,7 +648,7 @@ h1 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
 
