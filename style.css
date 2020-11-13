@@ -507,7 +507,8 @@ h1 {
 
 .promo-banner {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px 40px 20px;
+
 }
 
 .promo-banner div span {
@@ -585,8 +586,91 @@ h1 {
     }
 }
 
+/*---PROMO BANNER SECTION END--- */
+
+/*---ASIAN SECTION BEGIN---> */
+
+#asian-section {
+    position: relative;
+    background-color: darkmagenta;
+}
+
+.asian-img-container {
+    position: relative;
+    height: 75vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.asian-img-container img {
+    width: 100vw;
+}
+
+.asian-textbox {
+    position: absolute;
+    width: 36vw;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.asian-textbox .small-header {
+    color: #9C3535;
+}
+
+.asian-textbox .big-header {
+    color: white;
+    font-size: 60px;
+}
+
+.asian-textbox p {
+    color: white;
+}
+
+.asian-textbox span {
+    color: white;
+    font-weight: 400;
+}
+
+/*---ASIAN !TABLET! MEDIA QUERY BEGIN---*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+.asian-textbox {
+    position: absolute;
+    text-align: center;
+    width: 80vw;
+    left: 50%;
+    top: 50%;
+}
 
 
+
+}
+
+/*---ASIAN !MOBILE! MEDIA QUERY BEGIN---*/
+
+@media (max-width: 768px) {
+
+    .asian-textbox {
+    position: absolute;
+    width: 94vw;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+}
+
+    .asian-textbox .big-header {
+    font-size: 40px;
+}
+
+    .asian-textbox .small-header {
+    color: white;
+}
+}
+
+/*---ASIAN SECTION END---> */
 
 
 
