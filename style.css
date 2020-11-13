@@ -257,15 +257,22 @@ h1 {
 }
 
 
-.coin-burger-text-wrap  {
-  padding: 50px 100px 50px 100px;
 
 
-
+.coin-burger-text-wrap {
+    padding: 50px 100px 50px 100px;
+    text-align: center;
 }
 
-.coin-burger-text-wrap h1 {
+.coin-burger-text-wrap .small-header {
+    color: #DBD8D8;
+}
+
+
+
+.coin-burger-text-wrap .big-header {
     color: #605959;
+    font-size: 45px;
 }
 
 #coin-burger div p {
@@ -274,14 +281,14 @@ h1 {
 }
 
 #coin-burger div a {
-    padding-bottom: 9px;
-    padding-top: 9px;
+    padding-bottom: 14px;
+    padding-top: 14px;
     padding-left: 20px;
     padding-right: 20px;
     border-style: solid;
     border-color: white;
     border-width: 0.5px;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 3px;
     margin: 0 auto;
     font-weight: 300;
@@ -289,14 +296,28 @@ h1 {
     color: white;
 }
 
+#coin-burger div a:hover {
+    color: #605959;
+    background-color: white;
+}
+
+
+
 
 @media (max-width: 768px) {
     #coin-burger {
-    background-color: #9C3535;
-    display: grid;
-    grid-template-columns: repeat(1, 100vw);
-    grid-template-rows: repeat(1, auto);
-}
+        display: grid;
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-rows: repeat(1, auto);
+    }
+
+    .coin-burger-text-wrap {
+        padding: 30px 20px 100px 20px;
+    }
+
+    .coin-burger-text-wrap .big-header {
+        font-size: 35px;
+    }
 
 
 }
