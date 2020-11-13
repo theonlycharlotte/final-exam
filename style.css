@@ -534,6 +534,12 @@ h1 {
     color: #312F2F;
 }
 
+.promo-banner div a:hover {
+    color: #312F2F;
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+}
+
 @media (min-width: 720px) {
 
 .promo-banner div br {
@@ -541,11 +547,6 @@ h1 {
 }
 
     }
-
-
-
-
-
 
 
 @media (max-width: 640px) {
