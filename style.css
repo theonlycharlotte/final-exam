@@ -227,12 +227,12 @@ h1 {
 
 
     .burger-svgs-wrapper {
-        width: 50vw;
+        width: 65vw;
 
     }
 
     .burger-svgs {
-        width: 50vw;
+        width: 65vw;
     }
 
     .hero-text-wrap .big-header {
@@ -247,94 +247,6 @@ h1 {
 
 
 }
-
-/*---COIN BURGER SECTION BEGIN---> */
-
-#coin-burger {
-    height: 60vh;
-    background-color: #312F2F;
-    display: grid;
-    grid-template-columns: repeat(2, 50vw);
-    grid-template-rows: repeat(2, auto);
-    color: white;
-}
-
-#coin-burger div {
-    overflow: hidden;
-}
-
-
-.coin-burger-text-wrap {
-    padding: 50px 100px 50px 100px;
-    text-align: center;
-}
-
-.coin-burger-text-wrap .small-header {
-    color: #DBD8D8;
-}
-
-
-
-.coin-burger-text-wrap .big-header {
-    color: #605959;
-    font-size: 45px;
-}
-
-#coin-burger div p {
-    margin-bottom: 50px;
-    line-height: 1.8;
-}
-
-#coin-burger div a {
-    padding-bottom: 14px;
-    padding-top: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-style: solid;
-    border-color: white;
-    border-width: 0.5px;
-    font-size: 13px;
-    letter-spacing: 3px;
-    margin: 0 auto;
-    font-weight: 300;
-    text-decoration: none;
-    color: white;
-}
-
-#coin-burger div a:hover {
-    color: #605959;
-    background-color: white;
-}
-
-
-
-
-@media (max-width: 1024px) {
-    #coin-burger {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(1, 100vw);
-        grid-template-rows: repeat(1, auto);
-    }
-
-    .coin-burger-text-wrap {
-        padding: 30px 20px 100px 20px;
-    }
-
-    .coin-burger-text-wrap .big-header {
-        font-size: 35px;
-    }
-
-
-}
-
-
-
-
-
-
-
-
 
 
 /*BURGER LAYER 1 ANIMATION BEGIN---> */
@@ -500,8 +412,179 @@ h1 {
 }
 
 
-
 /*---HERO SECTION END---*/
+
+
+/*---COIN BURGER SECTION BEGIN---> */
+
+#coin-burger {
+    height: 60vh;
+    background-color: #312F2F;
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(2, auto);
+    color: white;
+}
+
+#coin-burger div {
+    overflow: hidden;
+}
+
+
+.coin-burger-text-wrap {
+    padding: 50px 100px 50px 100px;
+    text-align: center;
+}
+
+.coin-burger-text-wrap .small-header {
+    color: #DBD8D8;
+}
+
+
+
+.coin-burger-text-wrap .big-header {
+    color: #605959;
+    font-size: 45px;
+}
+
+#coin-burger div p {
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+#coin-burger div a {
+    padding-bottom: 14px;
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-color: #DBD8D8;
+    border-width: 0.5px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    font-weight: 300;
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+#coin-burger div a:hover {
+    color: #EEEEEE;
+    background-color: #605959;
+    border-color: #605959;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    #coin-burger {
+        height: 110vh;
+        display: grid;
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-rows: repeat(1, auto);
+    }
+
+    .coin-burger-text-wrap {
+        padding: 30px 20px 100px 20px;
+    }
+
+    .coin-burger-text-wrap .big-header {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    #coin-burger div a {
+        display: block;
+    }
+}
+
+/*---COIN BURGER SECTION END---> */
+
+/*---PROMO BANNER SECTION BEGIN---> */
+
+.promo-banner {
+    text-align: center;
+    padding: 20px;
+}
+
+.promo-banner div span {
+    font-weight: 500;
+}
+
+.promo-banner div a {
+    display: inline;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-color: #312F2F;
+    border-width: 0.5px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #312F2F;
+}
+
+@media (max-width: 640px) {
+    .promo-banner div a {
+        display: block;
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+.text-pop-up-top {
+    -webkit-animation: text-pop-up-top 1s cubic-bezier(.25, .46, .45, .94) infinite alternate both;
+    animation: text-pop-up-top 1s cubic-bezier(.25, .46, .45, .94) infinite alternate both
+}
+
+
+@-webkit-keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none
+    }
+
+    100% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 50px 30px rgba(0, 0, 0, .3)
+    }
+}
+
+@keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none
+    }
+
+    100% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 50px 30px rgba(0, 0, 0, .3)
+    }
+}
+
 
 
 
