@@ -123,8 +123,10 @@ svg path:hover {
 }
 
 .instagram-section .ig-handle {
+    font-weight: 300;
     color: white;
-    font-size: 25px;
+    /*    color: #9C3535;*/
+    font-size: 22px;
     letter-spacing: 2px;
     margin: 0;
     writing-mode: vertical-lr;
@@ -139,23 +141,40 @@ svg path:hover {
     width: 50vw;
     display: table;
     background: #DBD8D8;
-/*    padding: 20px;*/
+    /*    padding: 20px;*/
 }
 
 /*TABLET*/
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
     .feed_block {
         width: 80vw;
-
     }
+
+    .instagram-section .ig-handle {
+        left: 6vw;
+    }
+
 }
 
 /*MOBILE*/
 @media (max-width: 640px) {
     .feed_block {
-        width: 90vw;
-        padding: 5vw;
+        width: 96vw;
+        padding: 2vw;
     }
+
+    .instagram-section .ig-handle {
+        font-size: 13px;
+        writing-mode: horizontal-tb;
+        position: static;
+
+    }
+
+    .instagram-section .big-header {
+        font-size: 40px;
+
+
+}
 }
 
 
