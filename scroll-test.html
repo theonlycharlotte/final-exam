@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+    <style>
+
+    body {
+	 background: #fafafa;
+}
+ header, footer {
+	 height: 100vh;
+}
+ .container {
+	 max-width: 1400px;
+	 margin: 0 auto;
+}
+ main .text {
+	 padding: 90px 60px 90px 0;
+}
+ .image {
+	 overflow: hidden;
+	 width: 800px;
+	 height: 600px;
+	 transform-origin: center;
+	 background-size: 100%;
+	 background-position: center;
+	 background-repeat: no-repeat;
+}
+ img {
+	 width: 250%;
+	 height: auto;
+}
+ </style>
+
+
+    <title></title>
+</head>
+
+<body>
+    <header></header>
+<main>
+
+	<div class="container">
+
+		<div class="grid-x grid-margin-x">
+			<div class="cell small-6">
+				<div class="text">
+					<h1>Aenean lacinia bibendum nulla sed consectetur.</h1>
+					<p>Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue.</p>
+
+	<p>Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+				</div>
+			</div>
+			<div class="cell small-6">
+				<div class="image">
+					<img data-bottom-top="transform: scale(1.2) translate(0px, 0px)" data-top-bottom="transform: scale(1.5) translate(40px, 50px)" src="https://source.unsplash.com/800x600/?water">
+				</div>
+				</div>
+		</div>
+
+	</div>
+
+</main>
+
+<footer></footer>
+
+
+
+
+
+
+
+
+
+    <script>
+
+        $(document).ready(function(){
+	setTimeout(function(){
+		var s = skrollr.init();
+	}, 2000);
+});
+
+
+
+    </script>
+</body>
+</html>

@@ -213,12 +213,12 @@ h1 {
 
 
     .burger-svgs-wrapper {
-        width: 35vw;
+        width: 30vw;
 
     }
 
     .burger-svgs {
-        width: 35vw;
+        width: 30vw;
     }
 
 
@@ -260,8 +260,8 @@ h1 {
 /*BURGER LAYER 1 ANIMATION BEGIN---> */
 
 .fade-in {
-    -webkit-animation: fade-in 1.5s ease-in 0.4s both;
-    animation: fade-in 1.5s ease-in 0.4s both;
+    -webkit-animation: fade-in 1.5s ease-in 0.3s both;
+    animation: fade-in 1.5s ease-in 0.3s both;
 }
 
 @-webkit-keyframes fade-in {
@@ -287,8 +287,8 @@ h1 {
 /*BURGER LAYER 2 ANIMATION BEGIN*/
 
 .fade-in-2 {
-    -webkit-animation: fade-in 1.5s ease-in 1s both;
-    animation: fade-in 1.5s ease-in 1s both;
+    -webkit-animation: fade-in 1.5s ease-in 0.8s both;
+    animation: fade-in 1.5s ease-in 0.8s both;
 }
 
 @-webkit-keyframes fade-in {
@@ -314,8 +314,8 @@ h1 {
 /*BURGER LAYER 3 ANIMATION BEGIN*/
 
 .fade-in-3 {
-    -webkit-animation: fade-in 1.5s ease-in 1.6s both;
-    animation: fade-in 1.5s ease-in 1.6s both;
+    -webkit-animation: fade-in 1.5s ease-in 1.3s both;
+    animation: fade-in 1.5s ease-in 1.3s both;
 }
 
 @-webkit-keyframes fade-in {
@@ -341,8 +341,8 @@ h1 {
 /*BURGER LAYER 4 ANIMATION BEGIN*/
 
 .fade-in-4 {
-    -webkit-animation: fade-in 1.5s ease-in 2.2s both;
-    animation: fade-in 1.5s ease-in 2.2s both;
+    -webkit-animation: fade-in 1.5s ease-in 1.8s both;
+    animation: fade-in 1.5s ease-in 1.8s both;
 }
 
 @-webkit-keyframes fade-in {
@@ -368,8 +368,8 @@ h1 {
 /*BURGER LAYER 5 ANIMATION BEGIN*/
 
 .fade-in-5 {
-    -webkit-animation: fade-in 1.5s ease-in 2.8s both;
-    animation: fade-in 1.5s ease-in 2.8s both;
+    -webkit-animation: fade-in 1.5s ease-in 2.3s both;
+    animation: fade-in 1.5s ease-in 2.3s both;
 }
 
 @-webkit-keyframes fade-in {
@@ -395,8 +395,8 @@ h1 {
 /*BURGER LAYER 6 ANIMATION BEGIN*/
 
 .fade-in-6 {
-    -webkit-animation: fade-in 1.5s ease-in 3.4s both;
-    animation: fade-in 1.5s ease-in 3.4s both;
+    -webkit-animation: fade-in 1.5s ease-in 2.8s both;
+    animation: fade-in 1.5s ease-in 2.8s both;
 }
 
 @-webkit-keyframes fade-in {
@@ -426,7 +426,7 @@ h1 {
 /*---COIN BURGER SECTION BEGIN---> */
 
 #coin-burger {
-    height: 60vh;
+    height: 64vh;
     background-color: #312F2F;
     display: grid;
     grid-template-columns: repeat(2, 50vw);
@@ -437,6 +437,13 @@ h1 {
 #coin-burger div {
     overflow: hidden;
 }
+
+#coin-burger div img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
 
 
 .coin-burger-text-wrap {
@@ -485,7 +492,7 @@ h1 {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     #coin-burger {
         height: 110vh;
         display: grid;
@@ -498,14 +505,20 @@ h1 {
     }
 
     .coin-burger-text-wrap .big-header {
-        font-size: 35px;
+        font-size: 50px;
     }
+
+
 
 }
 
 @media (max-width: 640px) {
     #coin-burger div a {
         display: block;
+    }
+
+    .coin-burger-text-wrap .big-header {
+        font-size: 35px;
     }
 }
 
@@ -620,13 +633,15 @@ h1 {
 
 .asian-img-container {
     position: relative;
+/*    width: 100vw;*/
     height: 75vh;
-    width: 100vw;
     overflow: hidden;
 }
 
 .asian-img-container img {
-    width: 100vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .asian-textbox {
