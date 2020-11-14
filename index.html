@@ -73,7 +73,7 @@
 
     <!--    SCHEMA STRUCTURED DATA END-->
 
-    <!--    favicon-->
+    <!--    favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -85,11 +85,13 @@
     <meta name="theme-color" content="#ffffff">
     <!--    favicon end-->
 
-    <!--    Linked files-->
+    <!--    Linked files/libraries-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation.css">
     <script defer src="navigation.js"></script>
     <script defer src="nav-hide.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="jquery.instagramFeed.min.js"></script>
     <!--    Linked files end-->
 
 
@@ -227,6 +229,14 @@
         </section>
 
 
+        <section class="instagram-section">
+
+            <div class="feed_block">
+
+                <div id="instagram-feed1" class="instagram_feed"></div>
+            </div>
+
+        </section>
 
 
 
@@ -248,6 +258,26 @@
 
 
     </footer>
+
+
+    <!--  INSTAGRAM EMBEDDING-->
+    <script>
+        $(window).on('load', function() {
+            $.instagramFeed({
+                'username': 'aupetitmarche_monaco',
+                'container': "#instagram-feed1",
+                'display_profile': false,
+                'display_biography': false,
+                'display_gallery': true,
+                'callback': null,
+                'styling': true,
+                'items': 9,
+                'items_per_row': 3,
+                'margin': 1
+            });
+        });
+
+    </script>
 
 
 
