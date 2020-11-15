@@ -92,6 +92,7 @@ a {
 }
 
 
+
 body {
     margin: 0;
     padding: 0;
@@ -212,6 +213,12 @@ h1 {
     font-weight: 400;
     color: #9C3535;
 }
+
+.align-svg {
+    top: .125em;
+    position: relative;
+}
+
 
 /*---MEDIA QUERIES TEXT STYLING BEGIN---*/
 
@@ -490,14 +497,13 @@ h1 {
     }
 }
 
-
 /*---HERO SECTION END---*/
 
 
 /*---COIN BURGER SECTION BEGIN---> */
 
 #coin-burger {
-    height: 70vh;
+    height: 75vh;
     background-color: #312F2F;
     display: grid;
     grid-template-columns: repeat(2, 50vw);
@@ -518,7 +524,7 @@ h1 {
 
 
 .coin-burger-text-wrap {
-    padding: 65px 100px 50px 100px;
+    padding: 80px 100px 50px 100px;
     text-align: center;
 }
 
@@ -1146,4 +1152,44 @@ h1 {
         display: none;
     }
 
+}
+
+/*---FOOTER STYLING BEGIN----*/
+
+footer {
+    padding: 3rem;
+    display:grid;
+    background-color: #800000;
+    grid-template-columns: repeat(3, 33vw);
+    grid-template-rows: repeat(3, auto);
+    color: white;
+    line-height: 2;
+}
+
+footer div address {
+  font-style: normal;
+}
+
+footer div a {
+    color: white;
+}
+
+.footer-icon {
+    height: 17px;
+}
+
+.footer-icon-large {
+    height: 18px;
+}
+
+.footer-icon-social {
+    height: 25px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.footer-heading {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2.5px;
 }
