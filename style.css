@@ -119,6 +119,10 @@ svg path:hover {
     color: #605959;
 }
 
+#hashtag {
+    font-size: 35px;
+}
+
 .instagram-section .small-header {
     color: white;
 }
@@ -175,7 +179,7 @@ svg path:hover {
         font-size: 40px;
 
 
-}
+    }
 }
 
 
@@ -1157,8 +1161,9 @@ h1 {
 /*---FOOTER STYLING BEGIN----*/
 
 footer {
-    padding: 3rem;
-    display:grid;
+    padding-top: 40px;
+    padding-left: 75px;
+    display: grid;
     background-color: #800000;
     grid-template-columns: repeat(3, 33vw);
     grid-template-rows: repeat(3, auto);
@@ -1166,8 +1171,10 @@ footer {
     line-height: 2;
 }
 
+
+
 footer div address {
-  font-style: normal;
+    font-style: normal;
 }
 
 footer div a {
@@ -1183,13 +1190,39 @@ footer div a {
 }
 
 .footer-icon-social {
-    height: 25px;
+    height: 42px;
     margin-right: 20px;
     margin-top: 20px;
 }
 
 .footer-heading {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 13px;
     letter-spacing: 2.5px;
+}
+
+.copyright-wrap {
+    padding: 9px;
+    color: white;
+    background-color: #800000;
+    font-size: 10px;
+    text-align: left;
+}
+
+/*---FOOTER MEDIA QUERY BEGIN---*/
+
+@media (max-width: 768px) {
+    footer {
+        padding-top: 40px;
+        padding-left: 0;
+        padding-left: 0;
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-rows: repeat(1, auto);
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 28px;
+    }
+
 }

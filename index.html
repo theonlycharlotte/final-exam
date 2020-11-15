@@ -91,7 +91,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+
     <!--    jquery end-->
 
     <!--    Linked files/libraries-->
@@ -111,7 +112,7 @@
 
         <nav class="sticky" id="navbar">
             <div class="logo-wrap">
-                <a href="index.html"><img class="nav-logo" src="images/logo.svg"></a>
+                <a href="index.html"><img class="nav-logo" src="images/logo-burger.svg"></a>
             </div>
 
             <ul class="nav-links">
@@ -252,7 +253,7 @@
                 <div id="instagram-feed1" class="instagram_feed"></div>
             </div>
 
-            <h1 class="big-header">#AUPETITMARCHE</h1>
+            <h1 id="hashtag" class="big-header">#AUPETITMARCHE</h1>
             <p>Share your love of great food <img class="align-svg" src="images/heart.svg"></p>
 
         </section>
@@ -278,9 +279,9 @@
                 37 BD DU JARDIN EXOTIQUE<br>
                 98000 MONACO<br>
                 MONACO
-            </address><br><br>
+            </address><br>
             <a href="tel:+37797703030
-"><img class="align-svg footer-icon" src="images/phone-icon-white-stroke.svg">&nbsp;+377 97703030</a>
+"><img class="align-svg footer-icon" src="images/phone-icon-white-stroke.svg">&nbsp;+377 97 70 30 30</a>
         </div>
         <div>
             <h3 class="footer-heading">HORAIRES 7J/7</h3>
@@ -303,11 +304,14 @@
             <a>PROMO DEJEUNER</a><br>
             <a>PRIVACY POLICY</a><br>
             <a>COOKIE POLICY</a><br>
-            <a><img class="align-svg footer-icon-social" src="images/facebook-white.svg"></a>
-            <a><img class="align-svg footer-icon-social" src="images/instagram-white.svg"></a>
+            <a href="https://www.facebook.com/aupetitmarchemonaco/" target="_blank"><img class="align-svg footer-icon-social" src="images/facebook-red.svg"></a>
+            <a href="https://www.instagram.com/aupetitmarche_monaco/" target="_blank"><img class="align-svg footer-icon-social" src="images/instagram-red.svg"></a>
         </div>
 
     </footer>
+    <div class="copyright-wrap">
+        © 2020 AU PETIT MARCHÉ
+    </div>
 
 
     <!--  INSTAGRAM EMBEDDING-->
@@ -330,6 +334,7 @@
     </script>
 
     <!--    INITIALIZE SCROLLR LIBRARY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
     <script>
         $(document).ready(function() {
             setTimeout(function() {
