@@ -2,14 +2,15 @@
     position: fixed;
     top: 0;
     width: 100%;
-    transition: top 0.3s;
+    transition: top 0.2s;
     /* Transition effect when sliding down (and up) */
 }
 
 .nav-logo {
     margin-left: 10px;
+/*    height: 90%;*/
     width: 17%;
-    padding-top: 7px;
+
 }
 
 
@@ -17,13 +18,13 @@
 @media (max-width: 768px){
     .nav-logo {
     margin-left: 10px;
-    width: 22%;
+    width: 18%;
 }
 }
 
 
 .nav-phone-icon {
-    height: 22px;
+    height: 20px;
     margin-right: 8px;
     top: .125em;
     position: relative;
@@ -46,7 +47,7 @@
     }
 
     .nav-phone-icon {
-        height: 16px;
+        height: 13px;
         margin-right: 4px;
     }
 }
@@ -82,10 +83,11 @@ nav {
 }
 
 .nav-links a {
-    color: #605959;
+    color: #800000;
     text-decoration: none;
-    letter-spacing: 3px;
-    font-size: 15px;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 
@@ -130,7 +132,7 @@ nav {
         justify-content: space-around;
         align-items: center;
         height: 7.2vh;
-        background-color: rgba(219, 216, 216, 0.9);
+        background-color: #DBD8D8;
     }
 
 
@@ -145,7 +147,7 @@ nav {
         right: 0px;
         height: 95vh;
         top: 5vh;
-        background-color: rgba(219, 216, 216, 0.9);
+        background-color: #DBD8D8;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -161,9 +163,10 @@ nav {
     }
 
     .nav-links a {
-        font-size: 24px;
+        font-size: 17px;
         font-family: termina, sans-serif;
-        font-weight: 300;
+        font-weight: 400;
+        letter-spacing: 4px;
         font-style: normal;
     }
 
