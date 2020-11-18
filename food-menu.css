@@ -11,6 +11,7 @@
     background-color: white;
     padding-top: 12px;
     padding-bottom: 12px;
+    position: relative;
 }
 
 .dish-img-wrap {
@@ -34,10 +35,19 @@
     width: 92%;
     text-align: right;
     font-weight: 400;
+    position: absolute;
+    bottom: 3px;
 }
 
 .dish-text h3 {
     margin: 0;
+}
+
+.menu-headers {
+    font-size: 3.2rem;
+    color: #605959;
+    text-align: center;
+
 }
 
 /*TABLET */
@@ -65,20 +75,27 @@
 @media (max-width: 640px) {
 
     .la-carte-grid {
-        width: 98vw;
+        width: 100vw;
         margin: 0 auto;
-        grid-template-columns: repeat(1, 98vw);
+        grid-template-columns: repeat(1, 100vw);
     }
 
     .dish-wrapper {
         display: grid;
         grid-gap: 1vw;
-        grid-template-columns: repeat(2, 47vw);
+        grid-template-columns: repeat(2, 49vw);
     }
 
     .dish-price {
         text-align: left;
         margin-left: 8px;
+        position: static;
+    }
+
+    .dish-text {
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: 0.5px;
     }
 
 
