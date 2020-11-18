@@ -47,7 +47,10 @@
     font-size: 3.2rem;
     color: #605959;
     text-align: center;
+}
 
+.la-carte-body-text {
+    text-align: center;
 }
 
 /*TABLET */
