@@ -196,8 +196,8 @@ h1 {
 
 .small-header {
     font-size: 0.9rem;
-    font-weight: 400;
-    letter-spacing: 3px;
+    font-weight: 500;
+    letter-spacing: 3.5px;
 }
 
 .big-header {
@@ -517,7 +517,7 @@ h1 {
 /*---COIN BURGER SECTION BEGIN---> */
 
 #coin-burger {
-    height: 75vh;
+    height: auto;
     background-color: #312F2F;
     display: grid;
     grid-template-columns: repeat(2, 50vw);
@@ -525,7 +525,7 @@ h1 {
     color: white;
 }
 
-#coin-burger div {
+.coin-burger-img-wrap {
     overflow: hidden;
 }
 
@@ -583,13 +583,14 @@ h1 {
 
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
     #coin-burger {
-        height: 110vh;
+        height: auto;
         display: grid;
         grid-template-columns: repeat(1, 100vw);
         grid-template-rows: repeat(1, auto);
     }
+
 
     .coin-burger-text-wrap {
         padding: 30px 20px 100px 20px;
@@ -719,14 +720,13 @@ h1 {
 
 #asian-section {
     position: relative;
-    background-color: darkmagenta;
+    height: 80vh;
+/*    background-color: darkmagenta;*/
 }
 
 .asian-img-container {
-    position: relative;
-    /*    width: 100vw;*/
-    height: 75vh;
     overflow: hidden;
+    height: 100%;
 }
 
 .asian-img-container img {
@@ -737,15 +737,15 @@ h1 {
 
 .asian-textbox {
     position: absolute;
-    width: 36vw;
-    left: 25%;
+    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    text-align: left;
+    text-align: center;
 }
 
 .asian-textbox .small-header {
-    color: #9C3535;
+    color: white;
+    font-weight: 500;
 }
 
 .asian-textbox .big-header {
@@ -771,13 +771,13 @@ h1 {
 /*---ASIAN !TABLET! MEDIA QUERY BEGIN---*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #asian-section {
+        height: 80vh;
+    }
 
     .asian-textbox {
-        position: absolute;
         text-align: center;
-        width: 80vw;
-        left: 50%;
-        top: 50%;
+
     }
 
 }
@@ -786,11 +786,12 @@ h1 {
 
 @media (max-width: 768px) {
 
+    #asian-section {
+        height: 100vh;
+    }
+
     .asian-textbox {
-        position: absolute;
         width: 94vw;
-        left: 50%;
-        top: 50%;
         text-align: center;
     }
 
@@ -1008,7 +1009,7 @@ h1 {
     .g1 {
         position: relative;
         top: 0;
-/*        background-color: aqua;*/
+        /*        background-color: aqua;*/
         /*        padding: 12px;*/
         width: 100vw;
 
