@@ -114,6 +114,9 @@ svg path:hover {
     text-align: center;
     padding-top: 70px;
     padding-bottom: 70px;
+/*    background-color: deepskyblue;*/
+/*    background-image: url("images/4-post.jpg");*/
+/*    background-size: cover;*/
 }
 
 .instagram-section .big-header {
@@ -121,6 +124,8 @@ svg path:hover {
 }
 
 #hashtag {
+    font-family: termina, sans-serif;
+    font-weight: 300;
     font-size: 35px;
 }
 
@@ -131,7 +136,6 @@ svg path:hover {
 .instagram-section .ig-handle {
     font-weight: 300;
     color: white;
-    /*    color: #9C3535;*/
     font-size: 22px;
     letter-spacing: 2px;
     margin: 0;
@@ -211,12 +215,12 @@ h1 {
 
 .bold-text {
     font-weight: 500;
-    color: #605959;
+    color: #800000;
 }
 
 .semi-bold-text {
     font-weight: 400;
-    color: #9C3535;
+    color: #605959;
 }
 
 .align-svg {
@@ -806,7 +810,95 @@ h1 {
 
 /*---ASIAN SECTION END---> */
 
+/*---SOCIAL PROOF BEGIN---*/
 
+.social-proof-section {
+    background-color: #eeeeee;
+    padding-bottom: 10vh;
+    padding-top: 8vh;
+}
+
+.social-proof-grid {
+    display: grid;
+    width: 84vw;
+    grid-template-columns: repeat(3, 28vw);
+    margin: 0 auto;
+}
+
+.social-proof-cell {
+    background-image: url("images/quote-bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 12%;
+    padding-right: 12%;
+    position: relative;
+}
+
+
+.social-proof-section h2 {
+/*    font-family: meno-banner, serif;*/
+    text-align: center;
+    color: #605959;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.social-proof-cell p {
+    text-align: center;
+
+
+}
+
+.quote-name {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+.stars-icon {
+    height: 12px;
+}
+
+/*---SOCIAL PROOF TABLET BEGIN---*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .social-proof-cell {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+
+}
+
+
+/*---SOCIAL PROOF TABLET END---*/
+
+
+
+/*---SOCIAL PROOF MOBILE BEGIN---*/
+@media (max-width: 768px) {
+
+    .social-proof-grid {
+    width: 90vw;
+    grid-template-columns: repeat(1, 90vw);
+
+}
+
+    .social-proof-cell {
+    padding-left: 10%;
+    padding-right: 10%;
+        padding-top: 15px;
+}
+}
+
+
+/*---SOCIAL PROOF MOBILE END---*/
+
+
+
+
+/*---SOCIAL PROOF END---*/
 
 /*---BUTTON FOR ONLINE ORDER---*/
 .order-online-button {
@@ -1041,6 +1133,8 @@ h1 {
     font-size: 3.2rem;
 }
 
+
+
 .a2 {
     grid-area: a2;
     /*    background-color: yellow;*/
@@ -1142,12 +1236,6 @@ h1 {
         background-color: #EEEEEE;
     }
 
-/*
-    .menu-items-list li {
-        margin-top: 10px;
-    }
-*/
-
 
 }
 
@@ -1182,6 +1270,7 @@ h1 {
     }
 
 }
+
 
 /*---FOOTER STYLING BEGIN----*/
 

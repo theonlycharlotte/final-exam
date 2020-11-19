@@ -41,6 +41,9 @@
 
 .dish-text h3 {
     margin: 0;
+    color:#312F2F;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .menu-headers {
@@ -74,13 +77,13 @@
 }
 
 
-/*MOBILE */
+/*---MOBILE BEGIN--- */
 @media (max-width: 640px) {
 
     .la-carte-grid {
-        width: 100vw;
+        width: 98vw;
         margin: 0 auto;
-        grid-template-columns: repeat(1, 100vw);
+        grid-template-columns: repeat(1, 98vw);
     }
 
     .dish-wrapper {
@@ -103,3 +106,5 @@
 
 
 }
+
+/*---MOBILE END--- */

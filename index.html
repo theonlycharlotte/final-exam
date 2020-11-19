@@ -91,9 +91,8 @@
     <!--    Linked files/libraries-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation.css">
-    <script defer src="navigation.js"></script>
-    <script defer src="nav-hide.js"></script>
-    <script defer src="jquery.instagramFeed.min.js"></script>
+    <link rel="stylesheet" href="aos.css">
+
     <!--    Linked files end-->
 
 
@@ -178,19 +177,19 @@
 
             <div class="coin-burger-img-wrap">
 
-                <img data-bottom-top="transform: scale(1.2) translate(0px, 0px)" data-top-bottom="transform: scale(1.3) translate(40px, 30px)" src="images/burges-img.jpg">
+                <img data-bottom-top="transform: scale(1.2) translate(0px, 0px)" data-top-bottom="transform: scale(1.3) translate(40px, 30px)" src="images/4-post.jpg">
 
             </div>
 
 
-            <div class="coin-burger-text-wrap">
+            <div data-aos="zoom-in" class="coin-burger-text-wrap">
                 <h1 class="small-header">MEILLEUR BURGER À MONACO</h1>
                 <h1 class="big-header">LE COIN BURGÉS</h1>
                 <p>
                     Nos hambourgeouis, c’est 150 grammes de viande de boeuf haché “Premium”, origine France, moins de 15% de matière grasse, jamais congelé, toujours cuit à la minute au grill et servis sur un bun brioché, doré et toasté. Toujours généreux et savoureux comme on les aime.
                 </p>
 
-                <a href="menu.html" target="_blank">DÉCOUVRIR LE MENU</a>
+                <a href="menu.html">DÉCOUVRIR LE MENU</a>
             </div>
         </section>
 
@@ -210,7 +209,7 @@
         <section id="asian-section">
 
             <div class="asian-img-container">
-                <img data-bottom-top="transform: scale(1.2) translate(0px, 0px)" data-top-bottom="transform: scale(1.3) translate(40px, 30px)"src="images/coin-asiatique.jpg">
+                <img data-bottom-top="transform: scale(1.2) translate(0px, 0px)" data-top-bottom="transform: scale(1.3) translate(-40px, -30px)" src="images/coin-asiatique.jpg">
             </div>
 
             <div class="asian-textbox">
@@ -232,6 +231,32 @@
 
         </section>
 
+               <section class="social-proof-section">
+            <h2>WHAT THEY'RE SAYING...</h2>
+
+            <div class="social-proof-grid">
+
+                <div data-aos="fade-up" class="social-proof-cell">
+
+
+
+                    <p>"Best burgers in Monaco, in my opinion. Full of flavour and cooked to perfection in brioche buns. Will be ordering again!"</p>
+                    <div class="quote-name">Susanna <img class="stars-icon" src="images/five-stars.svg"></div>
+                </div>
+
+                <div data-aos="fade-up" class="social-proof-cell">
+                    <p>"Toujours au top! Un excellent burger, prix raisonnable pour la qualité présentée, l'accueil est chaleureux et le service rapide. Bravo pour la qualité de vos plats et votre accueil!"</p>
+                    <div class="quote-name">Isabelle <img class="stars-icon" src="images/five-stars.svg"></div>
+                </div>
+
+
+                <div data-aos="fade-up" class="social-proof-cell">
+                    <p>"C'est un très bon restaurant, on y mange très bien, l'accueil est super et les prix sont raisonnable."</p>
+                    <div class="quote-name">Ticaf <img class="stars-icon" src="images/five-stars.svg"></div>
+                </div>
+            </div>
+        </section>
+
 
         <section class="instagram-section">
 
@@ -242,7 +267,7 @@
             </a>
 
 
-            <div class="feed_block">
+            <div data-aos="zoom-in" class="feed_block">
 
                 <div id="instagram-feed1" class="instagram_feed"></div>
             </div>
@@ -253,6 +278,11 @@
         </section>
 
 
+
+
+
+
+
         <a href="">
             <div class="order-online-button scale-up-center">
                 <figure><img src="images/order-online-icon.svg" class="order-button-icon"></figure>
@@ -260,6 +290,8 @@
                     en ligne</div>
             </div>
         </a>
+
+
 
         <div class="footer-logo-wrap">
             <img src="images/footer-logo.svg">
@@ -318,6 +350,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--    jquery end-->
 
+    <script src="navigation.js"></script>
+    <script src="nav-hide.js"></script>
+    <script src="jquery.instagramFeed.min.js"></script>
+    <script src="aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+
+    </script>
+
+
     <!--  INSTAGRAM EMBEDDING-->
     <script>
         $(window).on('load', function() {
@@ -341,19 +386,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 
     <script>
-//        $(document).ready(function() {
-//            setTimeout(function() {
-//                var s = skrollr.init();
-//            }, 2000);
-//        });
+        //        $(document).ready(function() {
+        //            setTimeout(function() {
+        //                var s = skrollr.init();
+        //            }, 2000);
+        //        });
 
-        var s = skrollr.init({forceHeight: false});
+        var s = skrollr.init({
+            forceHeight: false
+        });
         var _skrollr = skrollr.get(); // get() returns the skrollr instance or undefined
         var windowWidth = $(window).width();
-        if ( windowWidth <= 768 && _skrollr !== undefined ) {
-          _skrollr.destroy();
+        if (windowWidth <= 768 && _skrollr !== undefined) {
+            _skrollr.destroy();
         }
-
 
     </script>
 
