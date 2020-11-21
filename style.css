@@ -182,9 +182,11 @@ svg path:hover {
 
     .instagram-section .big-header {
         font-size: 40px;
-
-
     }
+
+    #hashtag {
+    font-size: 25px;
+}
 }
 
 
@@ -521,7 +523,8 @@ h1 {
 /*---COIN BURGER SECTION BEGIN---> */
 
 #coin-burger {
-    height: auto;
+    height: 74vh;
+/*    overflow: hidden;*/
     background-color: #312F2F;
     display: grid;
     grid-template-columns: repeat(2, 50vw);
@@ -533,18 +536,21 @@ h1 {
     overflow: hidden;
 }
 
-#coin-burger div img {
+#burger-image {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-
-
-
 .coin-burger-text-wrap {
-    padding: 80px 100px 50px 100px;
+    width: 80%;
     text-align: center;
+    margin: 0 auto;
+    padding-top: 12vh;
+    padding-bottom: 4vh;
 }
+
+
 
 .coin-burger-text-wrap .small-header {
     color: #DBD8D8;
@@ -557,12 +563,12 @@ h1 {
     font-size: 45px;
 }
 
-#coin-burger div p {
+.coin-burger-text-wrap p {
     margin-bottom: 50px;
     line-height: 1.8;
 }
 
-#coin-burger div a {
+.coin-burger-text-wrap a {
     padding-bottom: 14px;
     padding-top: 14px;
     padding-left: 20px;
@@ -578,7 +584,7 @@ h1 {
     color: #EEEEEE;
 }
 
-#coin-burger div a:hover {
+.coin-burger-text-wrap a:hover {
     color: #EEEEEE;
     background-color: #605959;
     border-color: #605959;
@@ -595,13 +601,14 @@ h1 {
         grid-template-rows: repeat(1, auto);
     }
 
-
     .coin-burger-text-wrap {
-        padding: 30px 20px 100px 20px;
-    }
+    padding-top: 6vh;
+        padding-bottom: 8vh;
+}
+
 
     .coin-burger-text-wrap .big-header {
-        font-size: 50px;
+        font-size: 48px;
     }
 
 
@@ -609,7 +616,11 @@ h1 {
 }
 
 @media (max-width: 640px) {
-    #coin-burger div a {
+    #coin-burger {
+        height: auto;
+    }
+
+    .coin-burger-text-wrap a {
         display: block;
     }
 
@@ -625,6 +636,7 @@ h1 {
 .promo-banner {
     text-align: center;
     padding: 40px 20px 40px 20px;
+    line-height: 2.6;
 
 }
 
@@ -725,7 +737,7 @@ h1 {
 #asian-section {
     position: relative;
     height: 80vh;
-/*    background-color: darkmagenta;*/
+
 }
 
 .asian-img-container {
@@ -759,6 +771,7 @@ h1 {
 
 .asian-textbox p {
     color: white;
+    font-weight: 300;
 }
 
 .asian-textbox span {
@@ -836,7 +849,6 @@ h1 {
 
 
 .social-proof-section h2 {
-/*    font-family: meno-banner, serif;*/
     text-align: center;
     color: #605959;
     letter-spacing: 2px;
@@ -1069,13 +1081,10 @@ h1 {
 
 .g1 {
     grid-area: g1;
-/*    position: fixed;*/
-    /*    background-color: aqua;*/
 }
 
 .g2 {
     grid-area: g2;
-    /*    background-color: hotpink;*/
 
 
 }
@@ -1196,13 +1205,16 @@ h1 {
     list-style: none;
     padding-bottom: 10px;
     font-weight: 400;
-
-
 }
 
 .menu-items-list li a {
     text-decoration: none;
     color: #800000;
+}
+
+.menu-items-list li a:hover {
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 
 
@@ -1293,6 +1305,10 @@ footer div address {
 
 footer div a {
     color: white;
+}
+
+.footer-link:hover {
+    letter-spacing: 2px;
 }
 
 .footer-icon {

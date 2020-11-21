@@ -8,7 +8,6 @@
 
 .nav-logo {
     margin-left: 10px;
-/*    height: 90%;*/
     width: 17%;
 
 }
@@ -96,9 +95,7 @@ nav {
 }
 
 .nav-links .current {
-    /*    color: rgb(226, 226, 226);*/
     text-decoration: underline;
-    text-decoration-color: #FE662B;
 }
 
 
@@ -108,7 +105,6 @@ nav {
 }
 
 .nav-burger div {
-
     width: 22px;
     height: 2px;
     border-radius: 1px;
@@ -145,8 +141,8 @@ nav {
         overflow-x: hidden;
         position: absolute;
         right: 0px;
-        height: 95vh;
-        top: 5vh;
+        height: 96vh;
+        top: 4.5vh;
         background-color: #DBD8D8;
         display: flex;
         flex-direction: column;
