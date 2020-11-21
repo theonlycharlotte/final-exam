@@ -114,9 +114,9 @@ svg path:hover {
     text-align: center;
     padding-top: 70px;
     padding-bottom: 70px;
-/*    background-color: deepskyblue;*/
-/*    background-image: url("images/4-post.jpg");*/
-/*    background-size: cover;*/
+    /*    background-color: deepskyblue;*/
+    /*    background-image: url("images/4-post.jpg");*/
+    /*    background-size: cover;*/
 }
 
 .instagram-section .big-header {
@@ -130,7 +130,7 @@ svg path:hover {
 }
 
 .instagram-section .small-header {
-    color: white;
+    color: #605959;
 }
 
 .instagram-section .ig-handle {
@@ -185,8 +185,8 @@ svg path:hover {
     }
 
     #hashtag {
-    font-size: 25px;
-}
+        font-size: 25px;
+    }
 }
 
 
@@ -524,7 +524,7 @@ h1 {
 
 #coin-burger {
     height: 74vh;
-/*    overflow: hidden;*/
+    /*    overflow: hidden;*/
     background-color: #312F2F;
     display: grid;
     grid-template-columns: repeat(2, 50vw);
@@ -602,9 +602,9 @@ h1 {
     }
 
     .coin-burger-text-wrap {
-    padding-top: 6vh;
+        padding-top: 6vh;
         padding-bottom: 8vh;
-}
+    }
 
 
     .coin-burger-text-wrap .big-header {
@@ -618,6 +618,10 @@ h1 {
 @media (max-width: 640px) {
     #coin-burger {
         height: auto;
+    }
+
+    .coin-burger-text-wrap {
+        width: 92%;
     }
 
     .coin-burger-text-wrap a {
@@ -646,10 +650,10 @@ h1 {
 
 .promo-banner div a {
     display: inline;
-    padding-bottom: 14px;
-    padding-top: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     border-style: solid;
     border-color: #312F2F;
     border-width: 0.5px;
@@ -667,6 +671,7 @@ h1 {
     color: #312F2F;
     background-color: #EEEEEE;
     border-color: #EEEEEE;
+
 }
 
 @media (min-width: 720px) {
@@ -682,9 +687,12 @@ h1 {
     .promo-banner div a {
         display: block;
         margin-top: 30px;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0 auto;
+        padding-bottom: 9px;
+        padding-top: 9px;
+
     }
+
 }
 
 
@@ -858,8 +866,10 @@ h1 {
 
 .social-proof-cell p {
     text-align: center;
+}
 
-
+.bold {
+    font-weight: 400;
 }
 
 .quote-name {
@@ -868,17 +878,18 @@ h1 {
     font-weight: 300;
 
 }
+
 .stars-icon {
     height: 12px;
 }
 
 /*---SOCIAL PROOF TABLET BEGIN---*/
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     .social-proof-cell {
-    padding-left: 6%;
-    padding-right: 6%;
-}
+        padding-left: 6%;
+        padding-right: 6%;
+    }
 
 
 }
@@ -892,16 +903,16 @@ h1 {
 @media (max-width: 768px) {
 
     .social-proof-grid {
-    width: 90vw;
-    grid-template-columns: repeat(1, 90vw);
+        width: 90vw;
+        grid-template-columns: repeat(1, 90vw);
 
-}
+    }
 
     .social-proof-cell {
-    padding-left: 10%;
-    padding-right: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
         padding-top: 15px;
-}
+    }
 }
 
 
@@ -1167,9 +1178,9 @@ h1 {
 
 .a5 {
     grid-area: a5;
-/*        background-color: fuchsia;*/
-/*    height: 200vh;*/
-/*    padding: 30px;*/
+    /*        background-color: fuchsia;*/
+    /*    height: 200vh;*/
+    /*    padding: 30px;*/
 }
 
 @media (max-width: 768px) {
@@ -1271,7 +1282,7 @@ h1 {
 
 .sauce-wrap {
     text-align: center;
-/*    background-color: #EEEEEE;*/
+    /*    background-color: #EEEEEE;*/
     margin-bottom: 20px;
 }
 
