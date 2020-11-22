@@ -218,6 +218,8 @@ h1 {
 .bold-text {
     font-weight: 500;
     color: #800000;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
 .semi-bold-text {

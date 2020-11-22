@@ -53,7 +53,11 @@
 }
 
 .la-carte-body-text {
+    display: block;
     text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 2vh;
 }
 
 /*TABLET */
