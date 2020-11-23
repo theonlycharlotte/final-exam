@@ -68,8 +68,11 @@
         margin: 0 auto;
         grid-template-columns: repeat(2, 34vw);
     }
+
+
 }
 
+/*IN BETWEEN MOBILE AND TABLET LOL*/
 
 @media only screen and (min-width: 640px) and (max-width: 768px) {
     .la-carte-grid {
@@ -77,6 +80,7 @@
         margin: 0 auto;
         grid-template-columns: repeat(2, 47vw);
     }
+
 
 }
 
@@ -107,6 +111,13 @@
         font-size: 14px;
         letter-spacing: 0.5px;
     }
+
+    .dish-text h3 {
+    font-size: 16px;
+}
+    .la-carte-body-text {
+    width: 85%;
+}
 
 
 }
